@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient( hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
+    font-size: 12px;
+    padding-top: 1em;
+}
+
+
+/* @media (max-width: 576px) { */
+    
+
+    .img{
+        position: relative;
+        height: 79px;
+        margin-bottom: 4em;
+        margin-left: -31px;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .img img{
+        position: absolute;
+        margin-top: -9em;
+        z-index: 20;
+    }
+
+    .img img:nth-child(2){
+        margin: 0 0 0 27px;
+        z-index: 10;
+    }
+    
+
+    .imgdesk{
+        display: none;
+    }
+    
+
+    .principal{
+        width: 80%;
+        height: max-content;
+        background-color: #fff;
+        border-radius: 23px;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+        margin-top: 60px;
+        min-width: 290px;
+    }
+    .content{
+        margin: 1.5em 1em; 
+    }
+
+    .principal   h1{
+        text-align: center;
+        font-family: 'Kumbh Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 275%;
+        
+    }
+
+    .item{
+        border-bottom: thin hsl(240, 5%, 91%) solid;   
+    }
+    
+    .accordion{
+        font-family: 'Kumbh Sans', sans-serif;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        background-color: transparent;
+        width: 100%;
+        font-weight: 400;
+        text-align: left;
+        color: hsl(237, 12%, 33%);
+    }
+    
+    .accordion:focus{
+        outline: none ;
+
+    }
+
+    .accordion::after{
+        content: url('../images/icon-arrow-down.svg');
+        float: right;
+    }
+
+
+    .panel{
+        font-family: 'Kumbh Sans', sans-serif;
+        display: none; 
+        font-weight: 400;
+        padding: 10px;
+        line-height: 1.5em;
+        text-align: justify;
+        color:hsl(237, 12%, 33%);   
+        
+    }
+
+    .active.panel{
+         display: block; 
+      
+    }
+
+
+    .active.accordion{
+        font-weight: 700;
+        font-size: 105%;
+        color: hsl(238, 29%, 16%);
+    }
+
+    .active.accordion::after{
+        content: url('../images/icon-arrow-down.svg');
+        float: right;
+         transform: rotate(180deg);
+
+    }
+
+    .box{
+        display: none;
+    }
+
+
+
+/* } */
+@media (min-width: 577px) {
+
+    .img{
+        display: none;
+    }
+
+    .imgdesk{
+        display: block;
+        width: 486px;
+        height: 360px;
+        position: relative;
+        margin-right: 30px;
+    }
+
+    .imgdesk img{
+        position: absolute;
+    }
+    
+    .imgdesk img:nth-child(1){
+        right: 36px;
+        bottom: 50px;
+            z-index: 10;
+    
+    }
+
+    .imgdesk img:nth-child(2){
+        right: 30px;
+        bottom: -166px;
+    }
+
+    .imgdesk img:nth-child(3){
+        z-index: 20;
+        right: 350px;
+        
+    }
+
+
+    .principal{
+       display: flex;
+       justify-content: space-around;
+       padding: 5em;
+       margin: 0;
+       min-width: 800px;
+       max-width: 700px;
+       overflow: hidden;
+    }
+    
+
+   .cont{
+       position: relative;;
+       
+   }
+
+   .box{
+    
+    display: block;
+       position: absolute;
+    bottom: 132px;
+    right: 835px;
+    float: r;
+    z-index: 30
+   }
+
+    .left{
+        float: left;
+        width: 43em;   
+    }
+
+
+
+          
+    .principal   h1{
+        text-align: left; 
+    }
+
+    .content {
+     margin: 0;
+}
+
+
+.accordion {
+    padding-left: 0;
+}
+
+
+
+        }
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+ 
+ 
+ 
+    
+    <div class="cont">
+            <img src="./images/illustration-box-desktop.svg" class="box" alt="">
+    <div class="principal">
+               
+
+        
+        <div class="img">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="img">
+            <img src="./images/bg-pattern-mobile.svg" alt="shadow-img">
+        </div>
+        
+        <div class="imgdesk">
+            <img src="./images/illustration-woman-online-desktop.svg" alt="img">
+            <img src="./images/bg-pattern-desktop.svg"" alt="shadow-img"> 
+        </div>
+        
+        
+        <div class="left">
+            
+            
+            <h1>FAQ</h1>
+            <div class="content">
+                
+                <div class="item">
+                    <button class="accordion">How many team member I can invite?</button>
+        <div class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam!</div>
+    </div>
+    
+    <div class="item">
+        <button class="accordion">What is the maximun file upload size?</button>
+        <div class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam!</div>
+    </div>
+    
+    <div class="item">
+        <button class="accordion">How I do reset my password?</button>
+        <div class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam!</div>
+    </div>
+    
+    <div class="item">
+        <button class="accordion">Can I cancel my subcription?</button>
+        <div class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam!</div>
+    </div>
+    
+    <div class="item">
+        <button class="accordion">Do you provide additional support?</button>
+        <div class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam!</div>
+    </div>
+</div>
+</div>   
+</div>
+</div>
+
+
+<script>
+        const d=document,
+        $button = d.querySelectorAll('.accordion'),
+        $panel = d.querySelector('.panel');
+
+
+        $button.forEach( e => {
+            e.addEventListener('click', el =>{
+                el.preventDefault();
+                e.nextElementSibling.classList.toggle('active')
+                e.classList.toggle('active')
+            
+            })
+        })
+
+
+    </script>
+</body>
+</html>
