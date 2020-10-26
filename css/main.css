@@ -112,17 +112,23 @@ body{
         font-size: 105%;
         color: hsl(238, 29%, 16%);
     }
-
+    
     .active.accordion::after{
         content: url('../images/icon-arrow-down.svg');
         float: right;
-         transform: rotate(180deg);
-
+        transform: rotate(180deg);
+        
     }
-
+    
     .box{
         display: none;
     }
+    
+       .cont{
+           position: relative;
+           width: min-content;
+           
+       }
 
 
 
@@ -174,11 +180,6 @@ body{
        overflow: hidden;
     }
     
-
-   .cont{
-       position: relative;;
-       
-   }
 
    .box{
     
